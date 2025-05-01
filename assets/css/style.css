@@ -40,7 +40,7 @@ body {
   width: 35vw;
   height: 70vh;
   border-radius: 10px 0px 0px 10px;
-  background-color: #2e093b;
+  background-color: #235084;
   padding: 10px;
   text-align: center;
 }
@@ -48,7 +48,7 @@ body {
 #image {
   width: 20vw;
   height: 70vh;
-  background: url(assets/images/enter.jpg) no-repeat center center;
+  background: url(../images/enter.jpg) no-repeat center center;
   background-size: cover;
   border-radius: 0px 10px 10px 0px;
 }
