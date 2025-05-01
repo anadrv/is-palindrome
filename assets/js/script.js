@@ -5,7 +5,8 @@ const image = document.getElementById("image");
 const colorDiv = document.querySelector(".colorDiv");
 const colorEnterText = document.querySelector(".color-text");
 
-button.addEventListener("click", () => {
+button.addEventListener("click", (event) => {
+  event.preventDefault();
   const originalText = input.value;
 
   if (!originalText) {
@@ -18,7 +19,7 @@ button.addEventListener("click", () => {
   const isPalindrome = cleanText === reverseText;
 
   result.classList.remove("initial-text");
-  result.textContent = `${originalText} is ${
+  result.textContent = `"${originalText}" is ${
     isPalindrome ? "" : "not "
   }a palindrome`;
 

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Palindrome</title>
+    <title>Palindrome Checker</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/media-queries.css">
     <link
@@ -13,26 +13,32 @@
     />
   </head>
   <body>
-    <main>
+    <main role="main">
       <div class="container">
-        <div class="text colorDiv">
-          <h1>is it a palindrome?</h1>
-          <div class="enter-text">
-            <h3 class="color-text">enter the text here:</h3>
+        <section class="text colorDiv" aria-labelledby="main-title">
+          <h1 id="main-title">Is it a palindrome?</h1>
+
+          <form class="enter-text" aria-labelledby="form-title" role="form">
+            <h2 id="form-title" class="color-text">Enter the text here:</h2>
+
             <div class="input-group">
-              <input type="text" id="text-input" />
-              <button id="check-btn">check</button>
+              <label for="text-input" class="sr-only">Text to check</label>
+              <input type="text" id="text-input" name="text" aria-required="true" />
+              <button id="check-btn" type="submit">Check</button>
             </div>
-          </div>
-          <div id="explain">
-            <p id="result" class="initial-text">
-              a <em>palindrome</em> is a word or sentence that's spelled the
+          </form>
+
+          <section id="explain" aria-labelledby="result-description">
+            <p id="result-description" class="sr-only">Explanation of palindrome</p>
+            <p id="result" class="initial-text" aria-live="polite">
+              A <em>palindrome</em> is a word or sentence that's spelled the
               same way both forward and backward, ignoring punctuation, case,
               and spacing.
             </p>
-          </div>
-        </div>
-        <div id="image"></div>
+          </section>
+        </section>
+
+        <div id="image" role="img" aria-label="Artistic image with a comic-style character"></div>
       </div>
     </main>
     <script src="assets/js/script.js"></script>
