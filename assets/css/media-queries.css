@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (max-width: 600px) {
 
   .sr-only {
     position: absolute;
@@ -25,7 +25,7 @@
   }
 
   h1 {
-    margin-top: -30%;
+    margin-top: -15%;
   }
 
   #image {
