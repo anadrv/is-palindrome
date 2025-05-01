@@ -48,7 +48,7 @@ body {
 #image {
   width: 20vw;
   height: 70vh;
-  background: url(assets/images/enter.jpg) no-repeat center center;
+  background: url(/assets/images/enter.jpg) no-repeat center center;
   background-size: cover;
   border-radius: 0px 10px 10px 0px;
 }
