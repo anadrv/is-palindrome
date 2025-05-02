@@ -39,8 +39,10 @@
 }
 
 @media only screen and (max-width: 1000px) and (orientation: landscape) {
+ 
   .text {
     gap: 4%;
+    width: 45vw;
     padding: 0%;
     margin-top: 0;
     background-color: #235084;
@@ -48,6 +50,11 @@
 
   h1 {
     font-size: 1rem;
+    margin-top: 0%;
+  }
+
+  .enter-text {
+    width: 85%;
   }
 
   #result.initial-text {
@@ -57,9 +64,11 @@
 
   #explain {
     padding: 4%;
+    width: 85%;
   }
 
   h2 {
     font-size: 0.8em;
+    padding-bottom: 4%;
   }
 }
